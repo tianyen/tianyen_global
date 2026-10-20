@@ -1,0 +1,88 @@
+[
+  {
+    "id": 89,
+    "title": "Regent Taipei · Immersive Banquet",
+    "category": "Hospitality experiences",
+    "description": "Floral imagery unfolds across the banquet space at Regent Taipei. Projection brings the room’s walls and architectural surfaces into a shared visual atmosphere, surrounding the dining setting with light and colour.",
+    "image": "assets/refined/regent-refined-v1.webp",
+    "originalImage": "assets/regent-original.webp",
+    "gallery": [
+      "assets/regent-original.webp"
+    ],
+    "video": null
+  },
+  {
+    "id": 116,
+    "title": "Linkou Lightning House · Stunning Transformation",
+    "category": "Architectural projection",
+    "description": "Architectural projection mapping transforms the facade of Linkou’s Lightning House into a luminous night-time canvas. The building’s distinctive structure and an outdoor audience become part of a shared light-and-music experience.",
+    "image": "assets/refined/lightning-butterfly-crowd-v1.webp",
+    "gallery": [
+      "assets/lightning-butterfly.webp",
+      "assets/lightning-original.webp"
+    ],
+    "video": null,
+    "originalImage": "assets/lightning-butterfly.webp",
+    "coverLabel": "AI-composited cover"
+  },
+  {
+    "id": 4,
+    "title": "L’Oréal 30th Anniversary",
+    "category": "Brand events",
+    "description": "For L’Oréal’s 30th anniversary, recyclable materials and interactive light formed a Tree of Sustainability. A contactless digital guest check-in system brought together public-health needs and digital aesthetics during the pandemic. The installation explored the relationship between beauty, environmental responsibility and digital art.",
+    "image": "assets/refined/case-4-refined-v1.webp",
+    "gallery": [
+      "assets/case-4-0.jpg",
+      "assets/case-4-1.jpg",
+      "assets/case-4-2.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=c48opsA1V2U",
+    "source": "https://www.w1942.oy.com.tw/book-4.html",
+    "editorialNote": "分類為改版編排建議；說明取自現有公開案例，尚未新增年份、成效或未核實工作範圍。",
+    "originalImage": "assets/case-4-0.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Kinmen Kaoliang · It’s Me Bar",
+    "category": "Commercial spaces",
+    "description": "For Kinmen Kaoliang’s It’s Me Bar, interactive floor projection drew in passersby. Window projection and 3D projection mapping presented changing brand content, while the distillery’s logo became the basis for a projection wall exploring a younger brand image.",
+    "image": "assets/refined/case-17-refined-v1.webp",
+    "gallery": [
+      "assets/case-17-0.png"
+    ],
+    "video": "https://www.youtube.com/watch?v=ZqstzZXRH_0",
+    "source": "https://www.w1942.oy.com.tw/book-17.html",
+    "editorialNote": "分類為改版編排建議；說明取自現有公開案例，尚未新增年份、成效或未核實工作範圍。",
+    "originalImage": "assets/case-17-0.png"
+  },
+  {
+    "id": 13,
+    "title": "Memories in Amber · National Museum of Natural Science",
+    "category": "Exhibitions",
+    "description": "Light, shadow and visitor interaction evoked flowing resin and the passage of time. Physical and simulated plant materials shaped an immersive exploration of amber and life, with sustainability informing the installation.",
+    "image": "assets/refined/case-13-refined-v1.webp",
+    "gallery": [
+      "assets/case-13-0.png"
+    ],
+    "video": "https://www.youtube.com/watch?v=KcSFpKUD-bI",
+    "source": "https://www.w1942.oy.com.tw/book-13.html",
+    "editorialNote": "分類為改版編排建議；說明取自現有公開案例，尚未新增年份、成效或未核實工作範圍。",
+    "originalImage": "assets/case-13-0.png"
+  },
+  {
+    "id": 2,
+    "title": "Night Fever",
+    "category": "Commercial spaces",
+    "description": "A changing nightscape moved between three lighting themes: Lounge, Relax and Party. Projection mapping brought together quiet elegance and dynamic energy, reshaping the atmosphere of the space.",
+    "image": "assets/refined/case-2-refined-v1.webp",
+    "gallery": [
+      "assets/case-2-0.jpg",
+      "assets/case-2-1.jpg",
+      "assets/case-2-2.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=u0P08lfm6GU",
+    "source": "https://www.w1942.oy.com.tw/book-2.html",
+    "editorialNote": "分類為改版編排建議；說明取自現有公開案例，尚未新增年份、成效或未核實工作範圍。",
+    "originalImage": "assets/case-2-1.jpg"
+  }
+]
