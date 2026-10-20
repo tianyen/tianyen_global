@@ -1,5 +1,5 @@
-import {FluidArt} from './fluid.js?v=history-flow-3';
-import {initHistory} from './history.js?v=history-flow-3';
+import {FluidArt} from './fluid.js?v=history-glass-4';
+import {initHistory} from './history.js?v=history-glass-4';
 const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
 let paused=motionPreference.matches;try{if(!paused)paused=localStorage.getItem('tianyen-overseas-motion')==='paused'}catch{}
 const status=document.querySelector('.art-status');
