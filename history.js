@@ -229,6 +229,39 @@ const chapters=[
       "2024 / OPEN WATERS",
       "2024 / نحو البحر"
     ]
+  },
+  {
+    "y": "2026",
+    "l": [
+      "新境",
+      "New horizons",
+      "آفاق جديدة"
+    ],
+    "k": [
+      "2026 / 新境",
+      "2026 / NEW HORIZONS",
+      "2026 / آفاق جديدة"
+    ],
+    "h": [
+      "讓一滴想像<br>流入未來城市",
+      "A drop of imagination<br>flows into future cities",
+      "قطرة خيال<br>تتدفق نحو مدن المستقبل"
+    ],
+    "d": [
+      "水越過海洋 光抵達沙漠<br>從利雅得出發 讓想像成為城市的下一種可能",
+      "Water crosses the sea and light reaches the desert<br>From Riyadh imagination opens new possibilities for the city",
+      "يعبر الماء البحر ويصل الضوء إلى الصحراء<br>ومن الرياض يفتح الخيال إمكانات جديدة للمدينة"
+    ],
+    "e": [
+      "於沙烏地阿拉伯利雅得成立海外公司 開啟中東新篇章 打造未來城市",
+      "Established an overseas company in Riyadh Saudi Arabia opening a new chapter in the Middle East to shape future cities",
+      "تأسيس شركة خارجية في الرياض بالمملكة العربية السعودية وبدء فصل جديد في الشرق الأوسط لبناء مدن المستقبل"
+    ],
+    "f": [
+      "2026 / 利雅得",
+      "2026 / RIYADH",
+      "2026 / الرياض"
+    ]
   }
 ];
 export function initHistory(art){
