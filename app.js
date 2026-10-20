@@ -1,4 +1,5 @@
-import {FluidArt} from './fluid.js';
+import {FluidArt} from './fluid.js?v=history-1';
+import {initHistory} from './history.js?v=history-1';
 const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
 let paused=motionPreference.matches;try{if(!paused)paused=localStorage.getItem('tianyen-overseas-motion')==='paused'}catch{}
 const status=document.querySelector('.art-status');
@@ -9,9 +10,7 @@ updateMotion();document.querySelectorAll('.motion-toggle').forEach(btn=>btn.addE
 const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('#mobile-nav');
 function closeMenu(){menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open menu');nav.hidden=true}
 menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!open));menu.setAttribute('aria-label',open?'Open menu':'Close menu');nav.hidden=open});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!nav.hidden){closeMenu();menu.focus()}});
-document.querySelectorAll('[data-palette]').forEach(btn=>btn.addEventListener('click',()=>{const p=Number(btn.dataset.palette);lab.setPalette(p);document.querySelectorAll('[data-palette]').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));status.textContent=`${['Glacial','Ember','Pearl'][p]} atmosphere${paused?' · motion paused':''}`}));
-document.querySelector('#intensity').addEventListener('input',e=>{lab.setIntensity(Number(e.target.value)/100);document.querySelector('#intensity-value').value=`${e.target.value}%`});
-document.querySelector('.reset-art').addEventListener('click',()=>{lab.reset();document.querySelector('#intensity').value='50';document.querySelector('#intensity-value').value='50%';document.querySelectorAll('[data-palette]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.palette==='0')));status.textContent=`Glacial · flow reset${paused?' · motion paused':''}`});
+initHistory(lab);
 let lastFocus;function openDialog(id){lastFocus=document.activeElement;closeMenu();document.querySelector(id).showModal();document.body.style.overflow='hidden'}
 document.querySelectorAll('dialog').forEach(d=>{d.querySelector('.dialog-close').addEventListener('click',()=>d.close());d.addEventListener('close',()=>{document.body.style.overflow='';lastFocus?.focus()});d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()}})});
 const escape=text=>String(text).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

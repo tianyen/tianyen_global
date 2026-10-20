@@ -1,1 +1,10 @@
-{"name":"tianyen-global","version":"1.0.0","private":true,"type":"module","scripts":{"start":"python3 -m http.server 8823 --bind 127.0.0.1","check":"node --check app.js && node --check language.js && node --check fluid.js"}}
+{
+  "name": "tianyen-global",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8823 --bind 127.0.0.1",
+    "check": "node --check app.js && node --check language.js && node --check fluid.js && node --check history.js"
+  }
+}
