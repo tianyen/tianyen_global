@@ -110,7 +110,9 @@
     "Project type": "專案類型",
     "History chapters": "品牌歷程章節",
     "Motion paused": "動態已暫停",
-    "Still artwork mode": "靜態光影模式"
+    "Still artwork mode": "靜態光影模式",
+    "Previous milestone": "上一個年份",
+    "Next milestone": "下一個年份"
   },
   "ar": {
     "Selected work": "أعمال مختارة",
@@ -279,6 +281,8 @@
     "Night Fever installation detail": "نايت فيفر — تفاصيل التركيب",
     "Night Fever — AI-enhanced cover": "نايت فيفر — غلاف محسّن بالذكاء الاصطناعي",
     "Giant blue butterfly and audience at Linkou Lightning House — AI composite": "فراشة زرقاء عملاقة وجمهور أمام لايتنينغ هاوس في لينكو — تركيب بالذكاء الاصطناعي",
-    "History chapters": "فصول الرحلة"
+    "History chapters": "فصول الرحلة",
+    "Previous milestone": "المحطة السابقة",
+    "Next milestone": "المحطة التالية"
   }
 }

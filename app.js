@@ -1,11 +1,11 @@
-import {FluidArt} from './fluid.js?v=history-years-2';
-import {initHistory} from './history.js?v=history-years-2';
+import {FluidArt} from './fluid.js?v=history-flow-3';
+import {initHistory} from './history.js?v=history-flow-3';
 const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
 let paused=motionPreference.matches;try{if(!paused)paused=localStorage.getItem('tianyen-overseas-motion')==='paused'}catch{}
 const status=document.querySelector('.art-status');
 const arts=[...document.querySelectorAll('[data-art]')].map(host=>new FluidArt(host,{paused,onFallback:()=>{status.textContent='Still artwork mode';document.querySelectorAll('.interaction-hint').forEach(el=>el.textContent='A study in light and form')}}));
 const lab=arts[0];
-function updateMotion(){document.body.classList.toggle('motion-paused',paused);document.documentElement.style.scrollBehavior=paused?'auto':'';document.querySelectorAll('.motion-toggle').forEach(btn=>{btn.setAttribute('aria-pressed',String(paused));btn.innerHTML=paused?'Resume motion <span aria-hidden="true">▷</span>':'Pause motion <span aria-hidden="true">Ⅱ</span>'});arts.forEach(art=>art.setPaused(paused));status.textContent=paused?'Motion paused':arts.some(a=>a.host.dataset.renderer==='static')?'Still artwork mode':''}
+function updateMotion(){document.body.classList.toggle('motion-paused',paused);document.documentElement.style.scrollBehavior=paused?'auto':'';document.querySelectorAll('.motion-toggle').forEach(btn=>{btn.setAttribute('aria-pressed',String(paused));btn.innerHTML=paused?'Resume motion <span aria-hidden="true">▷</span>':'Pause motion <span aria-hidden="true">Ⅱ</span>'});arts.forEach(art=>art.setPaused(paused));document.dispatchEvent(new Event('motionchange'));status.textContent=paused?'Motion paused':arts.some(a=>a.host.dataset.renderer==='static')?'Still artwork mode':''}
 updateMotion();document.querySelectorAll('.motion-toggle').forEach(btn=>btn.addEventListener('click',()=>{paused=!paused;try{localStorage.setItem('tianyen-overseas-motion',paused?'paused':'playing')}catch{}updateMotion()}));motionPreference.addEventListener('change',e=>{paused=e.matches;updateMotion()});
 const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('#mobile-nav');
 function closeMenu(){menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open menu');nav.hidden=true}
