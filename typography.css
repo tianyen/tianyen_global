@@ -1,0 +1,15 @@
+@font-face{font-family:Spatial;src:url('space-display.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
+:root{--display:Spatial,Studio,"PingFang TC","Microsoft JhengHei",sans-serif}
+h1,h2,h3,.project-title,.hero-side,.history-chapters span{font-family:var(--display);font-weight:500}
+.hero h1{font-family:var(--display);font-weight:500;font-size:clamp(42px,4vw,68px);letter-spacing:.025em;line-height:1.35;color:#edf6fa;margin:24px 0 22px}
+html[lang=en] .hero-content{max-width:850px}
+html[lang=en] .hero h1{font-size:clamp(44px,4.4vw,72px);line-height:1.08;letter-spacing:-.045em;max-width:720px}
+.hero-side{font-size:11px;letter-spacing:.24em;color:#afc6d0}
+.hero .eyebrow{font-family:var(--display);letter-spacing:.25em}
+.history h2{font-family:var(--display);font-weight:500;letter-spacing:.01em}
+html[lang=en] .history h2{letter-spacing:-.035em;line-height:1.15}
+.history-current strong{font-family:var(--display);font-weight:500;font-variant-numeric:tabular-nums;letter-spacing:-.055em}
+.history .history-chapters small{font-family:var(--display);font-variant-numeric:tabular-nums}
+html[lang=en] :is(.intro h2,.studio h2,.contact h2){letter-spacing:-.035em;line-height:1.15}
+html[lang=ar] :is(h1,h2,h3,.project-title,.history-chapters span){font-family:Tahoma,"Geeza Pro",Arial,sans-serif;letter-spacing:normal;font-weight:400}
+@media(max-width:760px){.hero h1{font-size:clamp(28px,7.1vw,50px);letter-spacing:.015em;line-height:1.5}html[lang=en] .hero h1{font-size:clamp(30px,7.9vw,52px);line-height:1.12;letter-spacing:-.04em}.hero .eyebrow{letter-spacing:.14em}.history h2{line-height:1.35}html[lang=en] .history h2{font-size:clamp(30px,7.6vw,39px)}}
