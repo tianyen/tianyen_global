@@ -1,6 +1,6 @@
 (async()=>{
 const dictionaries=await fetch('./translations.json').then(r=>{if(!r.ok)throw Error('Translations unavailable');return r.json()});
-const allowed=['zh-TW','en','ar'];let lang='zh-TW';try{lang=new URLSearchParams(location.search).get('lang')||localStorage.getItem('tianyen-language')||lang}catch{}if(!allowed.includes(lang))lang='zh-TW';
+const allowed=['zh-TW','en','ar'];let lang='en';try{lang=new URLSearchParams(location.search).get('lang')||lang}catch{}if(!allowed.includes(lang))lang='en';
 const t=(key)=>dictionaries[lang]?.[key]??key;
 window.siteI18n={t,get lang(){return lang}};
 const records=new WeakMap(),attributes=new WeakMap();
