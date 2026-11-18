@@ -5,3 +5,8 @@
 #services{scroll-margin-top:40px}.project-caption{right:52px}.section-heading h2:after{white-space:nowrap}@media(min-width:1001px){.hero{min-height:680px}.hero-content{padding-top:160px}.hero h1{font-size:clamp(62px,4.8vw,82px)}}@media(prefers-reduced-motion:reduce){.project-grid{scroll-behavior:auto}}
 
 .hero-content{max-width:900px}.hero h1{font-size:clamp(46px,4.3vw,74px);letter-spacing:.055em;max-width:850px}@media(max-width:760px){.hero h1{font-size:clamp(30px,7.5vw,53px);line-height:1.5;letter-spacing:.02em}html[lang=en] .hero h1{font-size:clamp(28px,6.5vw,42px)}}
+
+/* Exact silver symbol from the supplied identity board, cropped in layout. */
+.header .brand .brand-symbol{width:76px;height:36px;mix-blend-mode:screen}
+.header .brand-symbol img{width:389.4px!important;height:259.6px!important;left:-177.5px;top:-12.2px}
+@media(max-width:760px){.header .brand .brand-symbol{width:48px;height:23px}.header .brand-symbol img{width:245.9px!important;height:163.9px!important;left:-112.1px;top:-7.7px}.header .brand{gap:8px}}
