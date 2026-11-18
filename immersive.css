@@ -6,7 +6,8 @@
 
 .hero-content{max-width:900px}.hero h1{font-size:clamp(46px,4.3vw,74px);letter-spacing:.055em;max-width:850px}@media(max-width:760px){.hero h1{font-size:clamp(30px,7.5vw,53px);line-height:1.5;letter-spacing:.02em}html[lang=en] .hero h1{font-size:clamp(28px,6.5vw,42px)}}
 
-/* Exact silver symbol from the supplied identity board, cropped in layout. */
+/* Shared silver identity across header and footer. */
 .header .brand .brand-symbol{width:76px;height:36px;mix-blend-mode:screen}
-.header .brand-symbol img{width:389.4px!important;height:259.6px!important;left:-177.5px;top:-12.2px}
-@media(max-width:760px){.header .brand .brand-symbol{width:48px;height:23px}.header .brand-symbol img{width:245.9px!important;height:163.9px!important;left:-112.1px;top:-7.7px}.header .brand{gap:8px}}
+.header .brand-symbol img{position:static;width:100%!important;height:100%!important;object-fit:contain!important}
+.footer-wordmark{display:flex;align-items:center;gap:.15em}.footer-wordmark .footer-symbol{width:1.5em;height:auto;mix-blend-mode:screen;flex-shrink:0}.footer-wordmark>span{margin-inline-start:auto}
+@media(max-width:760px){.header .brand .brand-symbol{width:48px;height:23px}.header .brand{gap:8px}.footer-wordmark{font-size:12vw}}
